@@ -6,7 +6,7 @@ const message = process.env.MESSAGE || "Hey this is automated testing"
 
 // Define a route handler for the default home page
 app.get('/test', (req, res) => {
-    res.send('Hello, World!'+ " hue "+message);
+    res.send('Hello, World!'+ " hue hue"+message);
 });
 
 // Start the server
