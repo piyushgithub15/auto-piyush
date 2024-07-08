@@ -1,11 +1,12 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000
+const message = process.env.MESSAGE || "Hey this is automated testing"
 
 // Define a route handler for the default home page
 app.get('/test', (req, res) => {
-    res.send('Hello, World!');
+    res.send('Hello, World!'+ " hue "+message);
 });
 
 // Start the server
